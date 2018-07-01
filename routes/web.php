@@ -13,6 +13,7 @@
 Route::get('/contactar', 'FrontController@contactar');
 Route::get('/registrar', 'FrontController@registrar');
 Route::get('/categorias/{id}', 'FrontController@Mostrarcategorias');
+Route::get('/detalleArticulo/{id}', 'FrontController@MostrarDetalle');
 Route::resource('/', 'FrontController');
 Route::get('configuracion/DeletProduct/{id}', 'ConfiguracionController@EliminarProductoOferta');
 Route::get('configuracion/EditProduct', 'ConfiguracionController@ProductoOferta');

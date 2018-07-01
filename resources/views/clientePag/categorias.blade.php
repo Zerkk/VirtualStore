@@ -84,7 +84,7 @@
                                         <h3><a href="detail.html">{{$art->nombreProducto}}</a></h3>
                                         <p class="price">${{$art->Precio}}</p>
                                         <p class="buttons">
-                                            <a href="detail.html" class="btn btn-default">Ver Detalle</a>
+                                            <a href="{{URL::action('FrontController@MostrarDetalle',$art->idt_articulo)}}" class="btn btn-default">Ver Detalle</a>
                                             <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
                                         </p>
                                     </div>
